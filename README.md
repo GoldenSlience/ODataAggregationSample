@@ -1,6 +1,7 @@
 The sample exposes a simple OData entity set People of entity type Person. The sample implemented a custom aggreation function People.TotalAge.
 
 Following examples can be used to do the test
+
 Get {endpoint}/People?$apply=groupby((Gender), aggregate(Age with People.TotalAge as TotalAge))
 
 Get {endpoint}/People?$apply=aggregate(Age with min as MinAge)
